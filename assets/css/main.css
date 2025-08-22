@@ -271,6 +271,63 @@ body.dark-mode .project-grid .project-card p {
   background: #2980b9;
 }
 
+/* Certifications Section */
+#certifications {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#certifications h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+#certifications .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+#certifications .project-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode #certifications .project-card {
+  background: #333;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+#certifications .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#certifications .project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#certifications .project-card h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+#certifications .project-card p {
+  padding: 0 15px 15px;
+  font-size: 1em;
+  color: #666;
+}
+
+body.dark-mode #certifications .project-card p {
+  color: #ccc;
+}
+
 /* Contact Section */
 #contact {
   text-align: center;
